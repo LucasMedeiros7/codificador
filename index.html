@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codificador</title>
+  <link rel="shortcut icon" href="./img/lock.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <main class="cabecalho">
+      <h1>Codificador</h1>
+      <p>Este codificador é capaz de converter textos normais em Cifra de César ou Base64. <br> A Cifra de César é
+        também
+        conhecida como "a troca de César" foi usada no Imperio Romano como uma forma de criptografia. <br> A base 64 é
+        uma
+        das
+        formas de criptografia usada na internet para transferência de dados.</p>
+    </main>
+    <form>
+      <div class="seleciona-codigo">
+        <label for="selecionaCodigo">Escolha a codificação:</label>
+        <select name="Tipo do codigo" id="selecionaCodigo">
+          <option value="seleciona">Selecione o código</option>
+          <option value="base64">Base64</option>
+          <option value="cesar">Cifra de César</option>
+        </select>
+      </div>
+      <div id='novoCampo' style='display:none;'>
+        <label for="incremento">Selecione um número para incremento:</label>
+        <input id='incremento' value='1' type="number">
+      </div>
+      <div class="radio-inputs">
+        <div class="radio-code">
+          <label for="encode">Codificar</label>
+          <input type="radio" id="encode" name="radio" value="codificar">
+          <img src="./img/lock.svg" alt="">
+        </div>
+        <div class="radio-decode">
+          <img src="./img/unlock.svg" alt="">
+          <input type="radio" id="decode" name="radio" value="decodificar">
+          <label for="decode">Decodificar</label>
+        </div>
+      </div>
+      <div class="digita-mensagem">
+        <label for="texto">Digite sua mensagem:</label>
+        <textarea id="texto" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+      </div>
+      <div class="resultado-codigo">
+        <label for="resultado">Veja seu resultado:</label>
+        <textarea id="resultado" cols="30" rows="10" placeholder="Resultado..."></textarea>
+      </div>
+      <button id="btnCode">Codificar</button>
+    </form>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
