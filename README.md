@@ -2,6 +2,9 @@
   Codificador
 </h1>
 
+<h2>Codficador/Decodificador de "Cifra de César" e "Base64".</h2> 
+<br>
+
 <p align="center">
   <img alt="" src="./img/preview.gif" width="100%">
 </p>
@@ -18,5 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🚧 Projeto
 
 Live Preview: https://lucasmedeiros7.github.io/codificador/
+
+<hr>
 
 Feito com ♥ by Lucas Medeiros
